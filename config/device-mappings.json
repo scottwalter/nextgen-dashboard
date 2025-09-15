@@ -1,0 +1,42 @@
+[
+  {
+    "Mining Metrics": [
+      { "hashRate": "Hashrate" },
+      { "expectedHashrate": "Expect Hashrate" },
+      { "bestDiff": "Best Difficulty" },
+      { "bestSessionDiff": "Best Session Difficulty" },
+      { "poolDifficulty": "Pool Difficulty" },
+      { "sharesAccepted": "Shares Accepted" },
+      { "sharesRejected": "Shares Rejected" },
+      { "responseTime": "Response Time" }
+    ]
+  },
+  {
+    "General Information": [
+      { "hostname": "Hostname" },
+      { "power": "Power" },
+      { "voltage": "Voltage" },
+      { "coreVoltageActual": "ASIC Voltage" },
+      { "frequency": "Frequency" },
+      { "temp": "ASIC Temp" },
+      { "vrTemp": "VR Temp" },
+      { "fanspeed": "Fan Speed" },
+      { "minFanSpeed": "Min Fan Speed" },
+      { "fanrpm": "Fan RPM" },
+      { "temptarget": "Target Temp" },
+      { "overheat_mode": "Over Heat Mode" },
+      { "uptimeSeconds": "Uptime" },
+      { "coreVoltage": "Core Voltage" },
+      { "current": "Current" },
+      { "wifiRSSI": "Wifi RSSI" },
+      { "stratumURL": "Stratum URL" },
+      { "stratumUser": "Stratum User" },
+      { "stratumPort": "Stratum Port" },
+      { "isUsingFallbackStratum": "Using Fallback Stratum" },
+      { "axeOSVersion": "AxeOS Version" },
+      { "idfVersion": "IDF Version" },
+      { "boardVersion": "Board Version" },
+      { "ASICModel": "ASIC Chip" }
+    ]
+  }
+]

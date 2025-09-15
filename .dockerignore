@@ -1,0 +1,40 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+README.md
+.env
+.nyc_output
+coverage
+.docker
+**/.DS_Store
+.vscode
+.idea
+
+# Frontend build files
+src/frontend/node_modules
+src/frontend/dist
+src/frontend/.vite
+
+# Development files
+*.log
+logs
+.cache
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local env files
+.env.local
+.env.*.local

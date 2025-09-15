@@ -1,0 +1,25 @@
+{
+  "applicationTitle": "Bitaxe Dashboard",
+  "version": "2.0.0",
+  "authentication": {
+    "enabled": false,
+    "username": "",
+    "password": "",
+    "jwtSecret": "93d8e404b4d652a23ef9f671ae33aeaef0d2f66ae87c4e789efda3854e14cde0",
+    "jwtExpiration": "1d"
+  },
+  "devices": [
+    {
+      "name": "Bitaxe1",
+      "url": "http://192.168.7.220",
+      "id": "bitaxe1"
+    }
+  ],
+  "miningCore": {
+    "enabled": false,
+    "url": ""
+  },
+  "refreshInterval": 25,
+  "createdAt": "2025-09-15T14:38:44.943Z",
+  "updatedAt": "2025-09-15T14:38:44.943Z"
+}

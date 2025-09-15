@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  nextgen-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      platforms:
+        - linux/amd64
+        - linux/arm64
+    container_name: nextgen-bitaxe-dashboard
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./config:/app/config
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    networks:
+      - bitaxe-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/config"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  bitaxe-network:
+    driver: bridge
+
+# Example configuration for development
+# Uncomment the following to enable development mode
+#
+# volumes:
+#   nextgen-dashboard-config:
+#     driver: local
+#
+# services:
+#   nextgen-dashboard-dev:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile.dev
+#     container_name: nextgen-bitaxe-dashboard-dev
+#     ports:
+#       - "3000:3000"
+#       - "5173:5173"  # Vite dev server
+#     volumes:
+#       - ./:/app
+#       - /app/node_modules
+#       - nextgen-dashboard-config:/app/config
+#     environment:
+#       - NODE_ENV=development
+#       - PORT=3000
+#     command: npm run dev
+#     networks:
+#       - bitaxe-network
